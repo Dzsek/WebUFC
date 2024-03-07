@@ -1,0 +1,29 @@
+.knob{
+    height: 14rem;
+    width: 14rem;
+    border-radius: 7rem;
+    background-color: rgb(107, 104, 104);
+    user-select: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    border-color: rgb(104, 2, 2);
+    border-width: 3rem;
+}
+
+.knob:active{
+  background-color: rgb(126, 123, 123);
+}
+
+.knobLine{
+  width: 1rem;
+  background-color: rgb(206, 206, 206);
+  height: 7rem;
+  border-radius: 0.3rem;
+}
+
+.knobContainer{
+  box-shadow: 3px 3px 2px #1c1414;
+  border-radius: 7rem;
+}

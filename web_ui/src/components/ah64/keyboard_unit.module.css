@@ -1,0 +1,110 @@
+.keyboard {
+    width: auto;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    background-color: #444645;
+    height: 100%;
+    justify-content: center;
+    justify-items: center;
+    align-items:start;
+    border-radius: 1rem;
+    border: solid 0.2rem rgb(0, 0, 0);
+}
+
+.keyboard_text{
+    width: 100%;
+    padding: 4rem 5rem 1rem 5rem;
+    background-color: #2e302f;
+    border-radius: 1rem;
+    border-bottom: solid 0.2rem rgb(0, 0, 0);
+    box-shadow: 0 0 0.5rem black;
+}
+
+.keyboard_grid{
+    grid-row-start: 2;
+    grid-row-end:3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    gap: 1rem;
+}
+
+.keyboard_grid_bg{
+    grid-row-start: 2;
+    grid-row-end:3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding-top: 2rem;
+    width: 89rem;
+    height: 61rem;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    gap: 1rem;
+}
+
+.divider1{
+    grid-row-start:1;
+    grid-row-end:5;
+    grid-column-start: 4;
+    grid-column-end: 7;
+    border-bottom: solid 0.5rem white;
+    border-right: solid 0.5rem white;
+    margin-bottom: -0.88rem;
+    margin-right: -0.75rem;
+}
+
+.divider2{
+    grid-row-start:1;
+    grid-row-end:5;
+    grid-column-start: 7;
+    grid-column-end: 10;
+    border-bottom: solid 0.5rem white;
+    margin-bottom: -0.88rem;
+    margin-left: -0.3rem;
+}
+
+.divider3{
+    grid-row-start:5;
+    grid-row-end:6;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    border-right: solid 0.5rem white;
+    border-bottom: solid 0.5rem white;
+    margin-right: -0.75rem;
+    margin-bottom: -0.86rem;
+}
+
+.divider4{
+    grid-row-start:5;
+    grid-row-end:6;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    border-left: solid 0.5rem white;
+    border-top: solid 0.5rem white;
+    margin-left: -0.7rem;
+    margin-top: -0.5rem; 
+}
+
+.panelSelect{
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+}
+
+.pageLabel{
+    color: rgb(168, 168, 168);
+    height: 9rem;
+    user-select: none;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-weight: 600;
+    font-size: 8rem;
+}

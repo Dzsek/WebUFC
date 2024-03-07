@@ -1,0 +1,23 @@
+.button{
+    border-radius: 1rem;
+    border-color: rgb(197, 197, 197);
+    background: rgb(167, 167, 167);
+    color: white;
+    height: 4.5rem;
+    width: 4.5rem;
+    user-select: none;
+    line-height: 2.1rem;
+}
+
+.button:active{
+    background-color: rgb(235, 235, 235);
+}
+
+@media (orientation: portrait){
+    .button{
+        border-radius: 1rem;
+        height: 6rem;
+        width: 6rem;
+        line-height: 3.1rem;
+    }
+}

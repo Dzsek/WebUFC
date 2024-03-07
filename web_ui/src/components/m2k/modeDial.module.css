@@ -1,0 +1,51 @@
+.base{
+    width: 23rem;
+    height: 23rem;
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    grid-template-rows: 100%;
+}
+
+.increment{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.decrement{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.increment:active, .decrement:active {
+    background-color: rgba(255, 255, 255, 0.459);
+    z-index: 1;
+}
+
+.knob{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    /* background-color: rgb(44, 44, 44); */
+    border-radius: 50%;
+    pointer-events: none;
+    margin: 2rem;
+    clip-path: circle(50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at 50% 0%, transparent 1.2rem, rgba(44,44,44,1) 0 0);
+}
+
+.knob > div{
+    background-color: rgb(26, 18, 18);
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(35% 100%, 65% 100%, 65% 20%, 35% 20%);
+}
+
+.knob > div > div {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(45% 90%, 55% 90%, 55% 20%, 45% 20%);
+}

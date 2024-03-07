@@ -1,0 +1,64 @@
+name: 'webufc build'
+
+on:
+  workflow_dispatch:
+    inputs:
+        version:
+            description: 'Version'
+            required: true
+    
+jobs: 
+  build_app:
+    name: 'Create WebUFC build'
+    runs-on: ubuntu-latest
+    permissions:
+        contents: write
+    steps:
+    - uses: actions/checkout@master
+
+    - name: Install packages
+      run: |
+        cd web_ui
+        npm install
+
+    - name: Use production config
+      run: |
+        cd web_ui
+        rm next.config.mjs
+        mv next.config.mjs.prod next.config.mjs
+    
+    - name: Build app
+      run: |
+        cd web_ui
+        npm run build
+    
+    - name: Create package
+      run: |
+        mkdir release
+        cp -r web_ui/build release/build
+        cp -r dcs release/dcs
+        cp -r dependencies release/dependencies
+        cp -r scripts release/scripts
+        cp app.js release/app.js
+        cp package.json release/package.json
+        cp package-lock.json release/package-lock.json
+        cp install.bat release/install.bat
+        cp uninstall.bat release/uninstall.bat
+        cp run.bat release/run.bat
+        cp README.txt release/README.txt
+
+    - name: Package release
+      run: (cd release && zip -r ../WebUFC.zip *)
+
+    - name: Create Release
+      uses: ncipollo/release-action@v1
+      with:
+        tag: WebUFC_${{ github.event.inputs.version}}
+        commit: main
+    
+    - name: Upload package to GitHub release
+      uses: svenstaro/upload-release-action@2.5.0
+      with: 
+        tag: WebUFC_${{ github.event.inputs.version }}
+        file: WebUFC.zip
+        asset_name: WebUFC.zip

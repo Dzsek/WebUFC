@@ -1,0 +1,17 @@
+.container{
+    color: rgb(5, 238, 5);
+    font-weight: 600;
+    font-size: 3rem;
+    display:grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-items: center;
+    margin-left: 1rem;
+    width: 4rem;
+}
+
+.container > span {
+    font-family: monospace;
+    white-space: pre;
+}

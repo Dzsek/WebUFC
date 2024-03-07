@@ -1,0 +1,20 @@
+.button{
+    border-color: rgb(73, 70, 70);
+    background: rgb(44, 43, 43); 
+    color: white;
+    height: 9rem;
+    user-select: none;
+    width: 9rem;
+    border-radius: 5.5rem;
+    padding: 0.5rem;
+}
+
+.button:active{
+    background-color: rgb(73, 70, 70);
+}
+
+.normalLabel{
+    font-size: 4rem;
+    font-weight: 600;
+    white-space: pre;
+}

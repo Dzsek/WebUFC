@@ -1,0 +1,29 @@
+.radioDiv{
+    display: flex;
+    flex-direction: column;
+}
+
+.radioDivHrz{
+    flex-direction: row;
+}
+
+.radioDiv > button{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 2rem;
+    background-color: rgb(107, 104, 104); 
+    border-color: rgb(148, 144, 144);
+    color:white;
+    font-weight: bold;
+    font-size: 4rem;
+    user-select: none;
+    margin: 0.5rem;
+}
+  
+.radioButtonActive{
+    outline: solid 0.4rem white;
+}
+
+.radioDiv > button:active{
+    background-color: rgb(148, 144, 144);
+}

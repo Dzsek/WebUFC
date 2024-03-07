@@ -1,0 +1,33 @@
+.greenLabel{
+    background-color: rgb(19, 39, 0);
+    height: 8rem;
+    color:rgb(1, 192, 1);
+    font-size: 7rem;
+    white-space: pre;
+    font-family: monospace;
+    text-align: right;
+    user-select: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    align-items: center;
+    box-shadow: inset 0 0 0.5rem black;
+}
+
+.leftLabel{
+    text-align: left;
+}
+
+.rightLabel{
+    text-align: right;
+}
+
+.backgroundPlate{
+    padding: 3rem 1rem 3rem 1rem;
+    border: solid 0.1rem rgb(94, 90, 90);
+    background-color: rgb(54, 52, 52);
+    box-shadow: black 0rem 0rem 0.5rem;
+    border-radius: 0.5rem;
+}

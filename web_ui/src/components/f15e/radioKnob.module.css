@@ -1,0 +1,70 @@
+.base{
+    width: 6rem;
+    height: 6rem;
+    display: grid;
+    grid-template-columns: 33% auto 33%;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+}
+
+.left{
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.right{
+    grid-column: 3;
+    grid-row: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.push{
+    grid-column: 2;
+    grid-row: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.left:active, .push:active, .right:active{
+    background-color: rgba(255, 255, 255, 0.397);
+    z-index: 1;
+}
+
+.art{
+    pointer-events: none;
+    background-color: rgb(168, 168, 168);
+    grid-column: 1/4;
+    grid-row: 1;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 1rem black;
+}
+
+.art>div{
+    background-color: rgb(0, 0, 0);
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+}
+
+@media (orientation: portrait){
+    .base{
+        width: 8rem;
+        height: 8rem;
+        display: grid;
+    }
+
+    .art{
+        width: 8rem;
+        height: 8rem;
+    }
+}

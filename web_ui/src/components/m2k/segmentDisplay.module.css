@@ -1,0 +1,15 @@
+.numbersContainer{
+    display: flex;
+    align-items: flex-end;
+}
+
+.decimal{
+    /* clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); */
+    border-radius: 100%;
+    height: 0.7rem;
+    width: 0.7rem;
+}
+
+.decimalColor{
+    background-color: rgb(5, 238, 5);
+}

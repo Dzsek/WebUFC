@@ -1,0 +1,75 @@
+.base{
+    width: 15rem;
+    height: 15rem;
+    display: grid;
+    grid-template-columns: 45% 10% 45%;
+    grid-template-rows: 100%;
+}
+
+.increment{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.decrement{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.increment:active, .decrement:active {
+    background-color: rgba(255, 255, 255, 0.459);
+    z-index: 1;
+}
+
+.knob{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    pointer-events: none;
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.extraart{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    width: 11rem;
+    height: 11rem;
+    pointer-events: none;
+    margin: 2rem;
+}
+
+.pointer{
+    grid-row: 1;
+    grid-column: 1;
+    background-color: rgb(22, 22, 22);
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(50% 10%, 60% 60%, 60% 95%, 40% 95%, 40% 60%);
+}
+
+.circle{
+    grid-row: 1;
+    grid-column: 1;
+    background-color: rgb(22, 22, 22);
+    width: 100%;
+    height: 100%;
+    clip-path: circle(25% at 50% 50%);
+    border-radius: 50%;
+}
+
+@media (orientation: portrait)
+{
+    .base{
+        width: 30rem;
+        height: 30rem;
+    }
+
+    .extraart{
+        width: 26rem;
+        height: 26rem;
+    }
+}

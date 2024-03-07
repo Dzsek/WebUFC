@@ -1,0 +1,45 @@
+.button{
+    border-radius: 1rem;
+    border-color: rgb(94, 90, 90);
+    background: rgb(54, 52, 52);
+    color: white;
+    height: 11rem;
+    width: 11rem;
+    user-select: none;
+}
+
+.button:active{
+    background-color: rgb(94, 90, 90);
+}
+
+.topLabel{
+    font-size: 3.3rem;
+    font-weight: 600;
+    white-space: pre;
+}
+
+.normalLabel{
+    font-size: 3.3rem;
+    font-weight: 600;
+    white-space: pre;
+}
+
+.yellow{
+    border: 0.5rem solid;
+    box-shadow: inset 0 0 1rem;
+    border-radius: 0;
+    border-color:rgb(59, 59, 59);  
+    background: rgb(172, 156, 14);  
+    color: black;
+}
+
+.yellow:active{
+    background-color: rgb(252, 244, 154);  
+}
+
+.glow{
+    box-shadow: 0 0 2rem rgb(255, 230, 0);
+    background: rgb(255, 230, 0);  
+}
+
+

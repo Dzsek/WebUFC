@@ -1,0 +1,54 @@
+.button{
+    border-color: rgb(94, 90, 90);
+    box-shadow: inset 0 0 1rem;
+    color: rgb(0, 0, 0);
+    height: 7rem;
+    width: 11rem;
+    user-select: none;
+}
+
+.normalLabel{
+    font-size: 2.4rem;
+    font-family: monospace;
+    font-weight: 500;
+    white-space: pre;
+    border-left: solid 0.2rem black;
+    background: rgb(189, 48, 13);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-left: solid 0.2rem black;
+    box-shadow: inset 0 0 1rem;
+}
+
+.normalLabel:active{
+    background-color: rgb(197, 135, 119);
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100%;
+    align-items: center;
+    border: 0.3rem solid black;
+}
+
+.light{
+    background-color: rgb(21, 214, 108);
+    width: 100%;
+    height: 100%;
+    border-right: solid 0.2rem black;
+    box-shadow: inset 0 0 1rem;
+}
+
+.on{
+    box-shadow: 0 0 2rem rgb(108, 255, 174);;
+    background: rgb(108, 255, 174);;  
+}
+
+.button:active .light{
+    background-color: rgb(166, 229, 194);
+}

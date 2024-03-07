@@ -1,0 +1,33 @@
+.button{
+    border-color:rgb(59, 59, 59);  
+    background: rgb(172, 156, 14);  
+    box-shadow: inset 0 0 1rem black;
+    height: 11rem;
+    width: 11rem;
+    border-radius: 6rem;
+    margin: 0px 5px 0px 0px;
+    padding: 0.5rem;
+}
+
+.button:active{
+    background-color: rgb(252, 244, 154);  
+}
+
+.topLabel{
+    font-size: 3.3rem;
+    font-weight: 600;
+    white-space: pre;
+    color:black
+}
+
+.normalLabel{
+    font-size: 3.3rem;
+    font-weight: 600;
+    white-space: pre;
+    color:black
+}
+
+.glow{
+    box-shadow: 0 0 2rem rgb(255, 230, 0);
+    background: rgb(255, 230, 0);  
+}

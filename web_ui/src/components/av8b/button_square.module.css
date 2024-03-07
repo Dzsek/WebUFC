@@ -1,0 +1,33 @@
+.button{
+    border-radius: 1rem;
+    border-color: rgb(94, 90, 90);
+    background: rgb(54, 52, 52);
+    color: white;
+    height: 9rem;
+    width: 9rem;
+    user-select: none;
+    line-height: 3.1rem;
+}
+
+.button:active{
+    background-color: rgb(94, 90, 90);
+}
+
+.normalLabel{
+    font-size: 3.1rem;
+    font-family: monospace;
+    font-weight: 600;
+    white-space: pre;
+}
+
+@media (orientation: portrait)
+{
+    .button{
+        height: 12rem;
+        width: 12rem;
+    }
+    
+    .normalLabel{
+        font-size: 3.8rem; 
+    }
+}

@@ -1,0 +1,105 @@
+.main{
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: solid 0.2rem rgb(0, 0, 0);
+    background-color: rgb(39, 40, 43);
+}
+
+.displays{
+    display:grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.keypad{
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 0.7rem;
+    padding: 0.5rem;
+}
+
+.displaylabel{
+    background-color: black;
+    padding: 0.5rem;
+    font-family: monospace;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+}
+
+.misc{
+    display:flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.modeknob{
+    display:grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.modeknob>span{
+    font-size: 1.5rem;
+    font-weight: 500;
+    background-color: black;
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+    color:white;
+}
+
+.switch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.switch>span{
+    font-size: 1.5rem;
+    font-weight: 500;
+    background-color: black;
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+    color:white;
+}
+
+.lbloff{ grid-row:2; grid-column:1; margin-right:-3.5rem }
+.lblcheck{ grid-row:1; grid-column:1; margin-right:-3.3rem; margin-bottom:-10rem }
+.lblent{ grid-row:1; grid-column:1; margin-right:-9rem; margin-bottom:-5rem }
+.lbloper{ grid-row:1; grid-column:2; margin-bottom:-3rem }
+.lblstm{ grid-row:1; grid-column:3; margin-left:-7rem; margin-bottom:-5rem }
+.lblk1{ grid-row:1; grid-column:3; margin-left:-5rem; margin-bottom:-10rem }
+.lblk2{ grid-row:2; grid-column:3; margin-left:-2.3rem }
+
+@media (orientation: portrait)
+{
+    .displaylabel{
+        padding: 1.5rem;
+        font-size: 3.5rem;
+    }
+
+    .modeknob>span{
+        font-size: 2.5rem;
+        border-radius: 0.5rem;
+        padding: 1.2rem;
+    }
+
+    .lbloff{ margin-right:-3.5rem }
+    .lblcheck{ margin-right:-4.7rem; margin-bottom:-20rem }
+    .lblent{ margin-right:-17rem; margin-bottom:-8rem }
+    .lbloper{ margin-bottom:-3rem }
+    .lblstm{ margin-left:-14rem; margin-bottom:-8rem }
+    .lblk1{ margin-left:-5.4rem; margin-bottom:-20rem }
+    .lblk2{  margin-left:-2.3rem }
+
+    .switch>span{
+        font-size: 3.5rem;
+    }
+}

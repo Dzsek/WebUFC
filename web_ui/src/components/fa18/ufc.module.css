@@ -1,0 +1,106 @@
+.main {
+    width: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+    padding: 2rem;
+    justify-content: space-between;
+    gap: 1rem;
+    background-color: rgb(68, 68, 70);
+    border-radius: 1.5rem;
+    border: solid 0.2rem rgb(0, 0, 0);
+    z-index: 1;
+}
+
+.radioDisplay{
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ipbutton{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-family: monospace;
+    font-weight: 600;
+    font-size: 2.7rem;
+    color:white;
+}
+
+.adfButton{
+    display:flex;
+    flex-direction: row;
+}
+
+.adfLabel{
+    align-self: flex-end;
+    margin-bottom: -8rem;
+    font-family: monospace;
+    font-weight: 600;
+    font-size: 2.7rem;
+    color:white;
+}
+
+.adflabels{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    font-family: monospace;
+    font-weight: 600;
+    font-size: 1.7rem;
+    color:white;
+    margin: 0.5rem;
+}
+
+.ufcContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.ufcDial{
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 1rem;
+}
+
+.scratchpad{
+    width: 36rem;
+    height: auto;
+}
+
+.ufcDialNumbers{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    margin: auto auto auto auto;
+    gap: 1rem;
+    background-color: inherit;
+}
+
+.ufcBottomBar{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(29, 29, 29);
+    border-radius: 1.5rem;
+    border: solid 0.2rem rgb(0, 0, 0);
+    padding: 5rem 1rem 1rem 1rem;
+    margin-top: -4rem;
+}
+
+.ufcLabels{
+    display: grid;
+    grid-template-columns: auto 20rem;
+    grid-template-rows: auto auto auto auto auto;
+    background-color: inherit;
+    justify-content: left;
+    align-items: center;
+    gap: 0.5rem;
+}

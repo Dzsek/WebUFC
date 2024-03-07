@@ -1,0 +1,70 @@
+.baseLabel{
+    background-color: rgb(0, 0, 0);
+    height: 4rem;
+    width: 40rem;
+    color:rgb(221, 221, 221);
+    font-size: 3.5rem;
+    white-space: pre;
+    font-family: monospace;
+    text-align: right;
+    user-select: none;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    align-items: center;
+    box-shadow: inset 0 0 0.5rem white;
+}
+
+.leftLabel{
+    text-align: left;
+}
+
+.centerLabel{
+    text-align: left;
+    justify-self: flex-start;
+}
+
+.forceCenter{
+    text-align: center;
+    justify-self: center;
+}
+
+.rightLabel{
+    text-align: right;
+    justify-self: flex-end;
+}
+
+.backgroundPlate{
+    padding: 1.3rem;
+    border: solid 0.1rem rgb(94, 90, 90);
+    background-color: rgb(54, 52, 52);
+    box-shadow: black 0rem 0rem 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.baseLabelAlt{
+    background-color: rgb(44, 16, 16);
+    color:rgb(202, 92, 59);
+    box-shadow: inset 0 0 0.5rem rgb(230, 12, 12);
+}
+
+.backgroundPlateAlt{
+    background-color: rgb(194, 146, 118);
+}
+
+@media (orientation: portrait){
+    .baseLabel{
+        height: 7.5rem;
+        width: 70rem;
+        font-size: 5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        box-shadow: inset 0 0 1rem white;
+    }
+
+    .baseLabelAlt{
+        box-shadow: inset 0 0 1rem rgb(230, 12, 12);
+    }
+}

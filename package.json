@@ -1,0 +1,9 @@
+{
+  "type": "module",
+  "dependencies": {
+    "express": "^4.18.2",
+    "open": "^10.0.3",
+    "regedit": "^5.1.3",
+    "ws": "^8.16.0"
+  }
+}
