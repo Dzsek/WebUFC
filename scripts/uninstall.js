@@ -52,9 +52,9 @@ for(let fd of dcsFolders)
     }
 
     let exportContents = fs.readFileSync(efile);
-    if(exportContents.indexOf(exportStr) < 0)
+    if(exportContents.indexOf(exportStr) > 0)
     {
-        exportContents = exportContents.replace(exportStr, "");
+        exportContents = exportContents.toString().replace(exportStr, "");
         fs.writeFileSync(efile, exportContents);
     }
 
