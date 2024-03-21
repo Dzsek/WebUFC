@@ -1,5 +1,6 @@
 =========================  INSTALLATION INSTRUCTIONS  =========================
 
+You can place the contents of this package anywhere.
 Run the included install.bat
 This will install node.js if not already installed, and copy the necessary export scripts into your DCS savegames folder.
 
