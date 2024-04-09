@@ -15,12 +15,6 @@ If you like my work, and would like to support development, feel free to [buy me
 |AJS 37|CK-37|Available|
 |Ka-50 III|PVI 800|Available|
 |F-15E|UFC (PLT & WSO)|Available|
-|JF-17|UFC, Radio|In progress|
-|Mirage F1 EE|PCN|Planned|
-|F-14|CAP (RIO)|Planned|
-|F-16C|UFC, DED|Planned|
-|A-10C2|UFC, CDU|Planned|
-|SA342|NADIR|Blocked, Can't figure out how to export NADIR information|
 
 ## Installation & Usage instructions
 
