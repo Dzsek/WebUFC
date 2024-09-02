@@ -71,6 +71,8 @@ function LuaExportStart()
 end
 
 function LuaExportActivityNextEvent(t)
+	RunExport()
+
 	if WebUFC.send_data then
 		WebUFC.sendData(WebUFC.send_data)
 		WebUFC.send_data = nil
@@ -107,7 +109,7 @@ function LuaExportBeforeNextFrame()
 	end
 end
 
-function LuaExportAfterNextFrame()
+function RunExport()
 	local current_time = LoGetModelTime()
 	local ac = WebUFC.getACType()
 	if ac == WebUFC.aircraft.fa18.type then

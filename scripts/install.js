@@ -29,7 +29,7 @@ if(results && results[shellFolders] && results[shellFolders]['values'] && result
 
 for(let fd of dcsFolders)
 {
-    const sfolder = path.join(fd, 'Scripts', 'Export.lua')
+    const sfolder = path.join(fd, 'Scripts')
     const efile = path.join(fd, 'Scripts', 'Export.lua')
     const wufcfolder = path.join(fd, 'Scripts', 'WebUFC')
     const wufcfile = path.join(fd, 'Scripts', 'WebUFC.lua')
