@@ -2,8 +2,6 @@
 
 DCS aircraft control panels running in a browser.
 
-If you like my work, and would like to support development, feel free to [buy me a beer](https://www.buymeacoffee.com/dzsek).
-
 ## Supported aircraft
 
 |Name|Panels|Status|
